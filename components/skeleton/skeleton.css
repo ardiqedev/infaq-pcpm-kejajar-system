@@ -1,0 +1,206 @@
+/**
+ * ==========================================
+ * QEDEV Framework
+ * Skeleton Component
+ * ==========================================
+ */
+
+/* ==========================================
+ * CONTAINER
+ * ========================================== */
+
+.qedev-skeleton {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: var(--space-lg);
+}
+
+/* ==========================================
+ * BASE
+ * ========================================== */
+
+.sk-card,
+.sk-avatar,
+.sk-avatar-sm,
+.sk-title,
+.sk-line,
+.sk-summary,
+.sk-box {
+  position: relative;
+
+  overflow: hidden;
+
+  background: #eceff3;
+
+  border-radius: var(--radius-md);
+}
+
+.sk-card {
+  padding: var(--space-md);
+
+  background: var(--color-surface);
+
+  box-shadow: var(--shadow-sm);
+}
+
+/* ==========================================
+ * SHIMMER
+ * ========================================== */
+
+.sk-avatar::after,
+.sk-avatar-sm::after,
+.sk-title::after,
+.sk-line::after,
+.sk-summary::after,
+.sk-box::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  transform: translateX(-100%);
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.7),
+    transparent
+  );
+
+  animation: qedevSkeleton 1.3s infinite;
+}
+
+@keyframes qedevSkeleton {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* ==========================================
+ * GREETING
+ * ========================================== */
+
+.sk-greeting {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.sk-greeting-text {
+  flex: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: var(--space-sm);
+}
+
+.sk-avatar {
+  width: 64px;
+
+  height: 64px;
+
+  border-radius: 50%;
+}
+
+/* ==========================================
+ * TITLE & LINE
+ * ========================================== */
+
+.sk-title {
+  width: 180px;
+
+  height: 18px;
+
+  margin-bottom: var(--space-md);
+}
+
+.sk-line {
+  width: 100%;
+
+  height: 12px;
+
+  margin-bottom: var(--space-sm);
+}
+
+.sk-lg {
+  width: 80%;
+}
+
+.sk-md {
+  width: 60%;
+}
+
+.sk-sm {
+  width: 40%;
+}
+
+/* ==========================================
+ * SCHEDULE
+ * ========================================== */
+
+.sk-schedule {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: var(--space-md);
+}
+
+.sk-schedule-list {
+  flex: 1;
+}
+
+.sk-summary {
+  width: 90px;
+
+  min-height: 90px;
+}
+
+/* ==========================================
+ * GRID
+ * ========================================== */
+
+.sk-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: var(--space-md);
+}
+
+.sk-box {
+  height: 96px;
+}
+
+/* ==========================================
+ * LIST
+ * ========================================== */
+
+.sk-list-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: var(--space-md);
+
+  padding: var(--space-md) 0;
+}
+
+.sk-avatar-sm {
+  width: 42px;
+
+  height: 42px;
+
+  border-radius: 50%;
+}
+
+.sk-list-content {
+  flex: 1;
+}

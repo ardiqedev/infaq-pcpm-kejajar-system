@@ -1,0 +1,44 @@
+/**
+ * ==========================================
+ * QEDEV Framework
+ * Search Component
+ * ==========================================
+ */
+
+.qedev-search {
+  display: flex;
+
+  align-items: center;
+
+  gap: var(--space-sm);
+
+  padding: 10px 14px;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: var(--radius-md);
+
+  background: var(--color-surface);
+}
+
+.qedev-search-icon {
+  color: var(--color-text-light);
+
+  font-size: var(--font-size-md);
+}
+
+.qedev-search-input {
+  flex: 1;
+
+  border: none;
+
+  background: transparent;
+
+  color: var(--color-text);
+
+  font-size: var(--font-size-md);
+}
+
+.qedev-search-input:focus {
+  outline: none;
+}

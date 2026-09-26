@@ -1,0 +1,40 @@
+/**
+ * ==========================================
+ * QEDEV Framework
+ * Empty Component
+ * ==========================================
+ */
+
+.qedev-empty {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: var(--space-2xl);
+
+  text-align: center;
+}
+
+.qedev-empty-icon {
+  font-size: 64px;
+
+  margin-bottom: var(--space-md);
+}
+
+.qedev-empty-title {
+  font-size: var(--font-size-xl);
+
+  font-weight: var(--font-weight-semibold);
+
+  color: var(--color-text);
+}
+
+.qedev-empty-message {
+  margin-top: var(--space-sm);
+
+  color: var(--color-text-light);
+}

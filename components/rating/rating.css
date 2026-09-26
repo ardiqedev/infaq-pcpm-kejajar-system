@@ -1,0 +1,242 @@
+/* ==========================================================
+   QEDEV Rating
+========================================================== */
+
+.qedev-rating {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+/* ==========================================================
+   LABEL
+========================================================== */
+
+.qedev-rating-label {
+  font-size: 15px;
+
+  font-weight: 600;
+
+  color: #1f2937;
+}
+
+/* ==========================================================
+   STARS
+========================================================== */
+
+.qedev-rating-stars {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+}
+
+.qedev-star {
+  width: 36px;
+
+  height: 36px;
+
+  border: none;
+
+  background: transparent;
+
+  padding: 0;
+
+  cursor: pointer;
+
+  font-size: 28px;
+
+  color: #d1d5db;
+
+  transition: all 0.2s ease;
+}
+
+.qedev-star:hover {
+  transform: scale(1.15);
+}
+
+.qedev-star.active {
+  color: #f59e0b;
+}
+
+/* ==========================================================
+   SCORE
+========================================================== */
+
+.qedev-rating-score {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  font-size: 14px;
+
+  color: #6b7280;
+}
+
+.qedev-rating-score strong {
+  font-size: 18px;
+
+  font-weight: 700;
+
+  color: var(--primary-color);
+}
+
+/* ==========================================================
+   DIVIDER
+========================================================== */
+
+.qedev-rating-divider {
+  height: 1px;
+
+  background: #e5e7eb;
+
+  margin: 4px 0;
+}
+
+/* ==========================================================
+   RESULT CARD
+========================================================== */
+
+.qedev-result-card {
+  margin-top: 28px;
+
+  padding: 24px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 24px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.qedev-result-title {
+  text-align: center;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+
+  color: #6b7280;
+}
+
+/* ==========================================================
+   SCORE
+========================================================== */
+
+.qedev-result-score {
+  margin-top: 14px;
+
+  text-align: center;
+
+  font-size: 58px;
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  color: #111827;
+}
+
+/* ==========================================================
+   BADGE
+========================================================== */
+.qedev-result-badge {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: fit-content;
+
+  margin: 18px auto 0;
+
+  padding: 10px 24px;
+
+  border-radius: 999px;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  background: #dcfce7;
+
+  color: #15803d;
+}
+
+.qedev-result-badge-wrapper {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 18px;
+}
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.qedev-result-description {
+  margin-top: 14px;
+
+  text-align: center;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  color: #4b5563;
+}
+
+/* ==========================================================
+   DIVIDER
+========================================================== */
+
+.qedev-result-divider {
+  margin-top: 24px;
+
+  border-top: 1px solid #eef2f7;
+}
+
+/* ==========================================================
+   BADGE VARIANT
+========================================================== */
+
+.qedev-result-success {
+  background: #dcfce7;
+
+  color: #15803d;
+}
+
+.qedev-result-primary {
+  background: #dbeafe;
+
+  color: #1d4ed8;
+}
+
+.qedev-result-warning {
+  background: #fef3c7;
+
+  color: #b45309;
+}
+
+.qedev-result-danger {
+  background: #fee2e2;
+
+  color: #dc2626;
+}

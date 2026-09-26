@@ -1,0 +1,114 @@
+/**
+ * ==========================================
+ * QEDEV Framework
+ * Utilities
+ * ==========================================
+ */
+
+/* ==========================================
+ * DISPLAY
+ * ========================================== */
+
+.hidden {
+  display: none !important;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+/* ==========================================
+ * FLEX
+ * ========================================== */
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+/* ==========================================
+ * TEXT
+ * ========================================== */
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+/* ==========================================
+ * WIDTH
+ * ========================================== */
+
+.w-full {
+  width: 100%;
+}
+
+/* ==========================================
+ * SPACING
+ * ========================================== */
+
+.mt-sm {
+  margin-top: var(--space-sm);
+}
+
+.mt-md {
+  margin-top: var(--space-md);
+}
+
+.mb-sm {
+  margin-bottom: var(--space-sm);
+}
+
+.mb-md {
+  margin-bottom: var(--space-md);
+}
+
+.p-sm {
+  padding: var(--space-sm);
+}
+
+.p-md {
+  padding: var(--space-md);
+}
+
+/* ==========================================
+ * BORDER
+ * ========================================== */
+
+.rounded {
+  border-radius: var(--radius-md);
+}
+
+/* ==========================================
+ * SHADOW
+ * ========================================== */
+
+.shadow {
+  box-shadow: var(--shadow-md);
+}

@@ -1,0 +1,1184 @@
+/* =========================================================
+   SETORAN PAGE
+========================================================= */
+
+.setoran-page {
+  width: 100%;
+  max-width: var(--app-max-width, 900px);
+  margin: 0 auto;
+  padding: 20px 16px 96px;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.setoran-page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.setoran-eyebrow {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--color-secondary, #d6a84f);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.setoran-page-header h1 {
+  margin: 0;
+  color: var(--color-primary, #0f2747);
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.setoran-page-header p {
+  margin: 6px 0 0;
+  color: var(--color-text-muted, #718096);
+  font-size: 12px;
+}
+
+.setoran-refresh-button {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #e5eaf0;
+  border-radius: 12px;
+  background: #fff;
+  color: #0f2747;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* =========================================================
+   SUMMARY
+========================================================= */
+
+.setoran-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.setoran-summary-card {
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #e5eaf0;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.setoran-summary-card span {
+  display: block;
+  margin-bottom: 5px;
+  color: #718096;
+  font-size: 9px;
+}
+
+.setoran-summary-card strong {
+  display: block;
+  overflow: hidden;
+  color: #0f2747;
+  font-size: 13px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* =========================================================
+   FILTER
+========================================================= */
+
+.setoran-filter {
+  display: flex;
+  gap: 7px;
+  overflow-x: auto;
+  margin-bottom: 14px;
+  padding-bottom: 2px;
+  scrollbar-width: none;
+}
+
+.setoran-filter::-webkit-scrollbar {
+  display: none;
+}
+
+.setoran-filter-button {
+  flex: 0 0 auto;
+  padding: 8px 12px;
+  border: 1px solid #e5eaf0;
+  border-radius: 999px;
+  background: #fff;
+  color: #718096;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.setoran-filter-button.active {
+  border-color: #0f2747;
+  background: #0f2747;
+  color: #fff;
+}
+
+/* =========================================================
+   LIST
+========================================================= */
+
+.setoran-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.setoran-card {
+  overflow: hidden;
+  border: 1px solid #e5eaf0;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 3px 12px rgba(15, 39, 71, 0.04);
+}
+
+.setoran-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 14px;
+}
+
+.setoran-user {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  gap: 10px;
+}
+
+.setoran-avatar,
+.setoran-detail-avatar {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: #eaf1f8;
+  color: #0f2747;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.setoran-user > div:last-child {
+  min-width: 0;
+}
+
+.setoran-user strong {
+  display: block;
+  overflow: hidden;
+  color: #172033;
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.setoran-user span {
+  display: block;
+  margin-top: 2px;
+  color: #718096;
+  font-size: 10px;
+}
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.setoran-status {
+  flex: 0 0 auto;
+  padding: 5px 8px;
+  border-radius: 999px;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.status-warning {
+  background: #f8f0df;
+  color: #8a651d;
+}
+
+.status-success {
+  background: #e7f6ed;
+  color: #237346;
+}
+
+.status-danger {
+  background: #fdeaea;
+  color: #b33b3b;
+}
+
+.status-neutral {
+  background: #eef1f4;
+  color: #667085;
+}
+
+/* =========================================================
+   CARD BODY
+========================================================= */
+
+.setoran-card-body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid #eef1f4;
+  border-bottom: 1px solid #eef1f4;
+}
+
+.setoran-stat {
+  padding: 11px 10px;
+}
+
+.setoran-stat + .setoran-stat {
+  border-left: 1px solid #eef1f4;
+}
+
+.setoran-stat span,
+.setoran-total span,
+.setoran-selisih span {
+  display: block;
+  margin-bottom: 4px;
+  color: #718096;
+  font-size: 9px;
+}
+
+.setoran-stat strong {
+  display: block;
+  color: #172033;
+  font-size: 10px;
+}
+
+/* =========================================================
+   TOTAL
+========================================================= */
+
+.setoran-total {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 12px 14px;
+}
+
+.setoran-total strong {
+  display: block;
+  color: #0f2747;
+  font-size: 13px;
+}
+
+/* =========================================================
+   SELISIH
+========================================================= */
+
+.setoran-selisih {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 14px 12px;
+  padding: 9px 11px;
+  border-radius: 10px;
+}
+
+.setoran-selisih strong {
+  font-size: 12px;
+}
+
+.selisih-ok {
+  background: #e7f6ed;
+  color: #237346;
+}
+
+.selisih-error {
+  background: #fdeaea;
+  color: #b33b3b;
+}
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.setoran-card-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  padding: 0 14px 14px;
+}
+
+.setoran-button {
+  min-height: 36px;
+  border: 0;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.setoran-button.primary {
+  background: #0f2747;
+  color: #fff;
+}
+
+.setoran-button.secondary {
+  border: 1px solid #dfe5ec;
+  background: #fff;
+  color: #0f2747;
+}
+
+/* =========================================================
+   EMPTY / ERROR
+========================================================= */
+
+.setoran-empty,
+.setoran-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  padding: 24px;
+  border: 1px solid #e5eaf0;
+  border-radius: 16px;
+  background: #fff;
+  text-align: center;
+}
+
+.setoran-empty-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background: #e7f6ed;
+  color: #237346;
+  font-weight: 800;
+}
+
+.setoran-empty strong,
+.setoran-error strong {
+  color: #172033;
+  font-size: 12px;
+}
+
+.setoran-empty span,
+.setoran-error span {
+  margin-top: 5px;
+  color: #718096;
+  font-size: 10px;
+}
+
+/* =========================================================
+   DETAIL
+========================================================= */
+
+.setoran-detail {
+  padding: 2px;
+}
+
+.setoran-detail-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.setoran-detail-header strong {
+  display: block;
+  color: #172033;
+  font-size: 13px;
+}
+
+.setoran-detail-header span {
+  display: block;
+  margin-top: 3px;
+  color: #718096;
+  font-size: 10px;
+}
+
+.setoran-detail-status {
+  margin: 14px 0;
+}
+
+.setoran-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.setoran-detail-item {
+  padding: 11px;
+  border: 1px solid #e5eaf0;
+  border-radius: 11px;
+  background: #fff;
+}
+
+.setoran-detail-item span {
+  display: block;
+  margin-bottom: 5px;
+  color: #718096;
+  font-size: 9px;
+}
+
+.setoran-detail-item strong {
+  display: block;
+  color: #172033;
+  font-size: 12px;
+}
+
+.setoran-detail-item.success {
+  border-color: #cdebd8;
+  background: #f1fbf5;
+}
+
+.setoran-detail-item.success strong {
+  color: #237346;
+}
+
+.setoran-detail-item.danger {
+  border-color: #f3cccc;
+  background: #fff5f5;
+}
+
+.setoran-detail-item.danger strong {
+  color: #b33b3b;
+}
+
+.setoran-detail-warning {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 12px;
+  padding: 11px;
+  border-radius: 11px;
+}
+
+.setoran-detail-warning strong {
+  font-size: 11px;
+}
+
+.setoran-detail-warning span {
+  font-size: 10px;
+}
+
+.setoran-detail-warning.success {
+  background: #e7f6ed;
+  color: #237346;
+}
+
+.setoran-detail-warning.danger {
+  background: #fdeaea;
+  color: #b33b3b;
+}
+
+.setoran-detail-note,
+.setoran-detail-verification {
+  margin-top: 12px;
+  padding: 11px;
+  border-radius: 11px;
+  background: #f5f7fa;
+}
+
+.setoran-detail-note span,
+.setoran-detail-verification span,
+.setoran-detail-verification small {
+  display: block;
+  color: #718096;
+  font-size: 9px;
+}
+
+.setoran-detail-note p {
+  margin: 5px 0 0;
+  color: #172033;
+  font-size: 11px;
+}
+
+.setoran-detail-verification strong {
+  display: block;
+  margin: 4px 0;
+  color: #172033;
+  font-size: 11px;
+}
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.setoran-loading-line,
+.setoran-loading-card {
+  border-radius: 12px;
+  background: #eaf1f8;
+  animation: setoranPulse 1.2s infinite;
+}
+
+.setoran-loading-line {
+  width: 55%;
+  height: 20px;
+  margin-bottom: 12px;
+}
+
+.setoran-loading-card {
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+@keyframes setoranPulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+/* =========================================================
+   DESKTOP
+========================================================= */
+
+@media (min-width: 768px) {
+  .setoran-page {
+    padding: 28px 24px 40px;
+  }
+
+  .setoran-page-header h1 {
+    font-size: 26px;
+  }
+
+  .setoran-card {
+    transition:
+      transform 0.15s ease,
+      box-shadow 0.15s ease;
+  }
+
+  .setoran-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 7px 20px rgba(15, 39, 71, 0.08);
+  }
+}
+
+/* =========================================================
+   SETORAN DETAIL OVERLAY
+========================================================= */
+
+.setoran-detail-overlay {
+  position: fixed;
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  padding: 0;
+
+  background: rgba(9, 27, 51, 0.48);
+
+  opacity: 0;
+
+  transition: opacity 0.18s ease;
+}
+
+/* =========================================================
+   SHOW
+========================================================= */
+
+.setoran-detail-overlay.show {
+  opacity: 1;
+}
+
+/* =========================================================
+   DETAIL SHEET
+========================================================= */
+
+.setoran-detail-sheet {
+  width: 100%;
+  max-width: 620px;
+  max-height: 92vh;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  background: #fff;
+
+  border-radius: 20px 20px 0 0;
+
+  box-shadow: 0 -8px 30px rgba(15, 39, 71, 0.16);
+
+  transform: translateY(20px);
+
+  transition: transform 0.18s ease;
+}
+
+.setoran-detail-overlay.show .setoran-detail-sheet {
+  transform: translateY(0);
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.setoran-detail-sheet-header {
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 12px;
+
+  padding: 17px 18px;
+
+  border-bottom: 1px solid #e5eaf0;
+}
+
+.setoran-detail-sheet-eyebrow {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #d6a84f;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+}
+
+.setoran-detail-sheet-title {
+  margin: 0;
+
+  color: #0f2747;
+
+  font-size: 18px;
+
+  line-height: 1.2;
+}
+
+.setoran-detail-close {
+  flex: 0 0 auto;
+
+  display: grid;
+
+  place-items: center;
+
+  width: 34px;
+  height: 34px;
+
+  padding: 0;
+
+  border: 0;
+
+  border-radius: 50%;
+
+  background: #f5f7fa;
+
+  color: #718096;
+
+  font-size: 22px;
+
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.setoran-detail-close:hover {
+  background: #eaf1f8;
+
+  color: #0f2747;
+}
+
+/* =========================================================
+   BODY
+========================================================= */
+
+.setoran-detail-sheet-body {
+  flex: 1;
+
+  overflow-y: auto;
+
+  padding: 16px 18px 20px;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.setoran-detail-sheet-footer {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 8px;
+
+  padding: 12px 18px;
+
+  border-top: 1px solid #e5eaf0;
+
+  background: #fff;
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.setoran-detail-sheet-footer .setoran-button {
+  min-height: 40px;
+}
+
+/* =========================================================
+   DESKTOP
+========================================================= */
+
+@media (min-width: 768px) {
+  .setoran-detail-overlay {
+    align-items: center;
+
+    padding: 24px;
+  }
+
+  .setoran-detail-sheet {
+    max-height: 90vh;
+
+    border-radius: 18px;
+
+    transform: translateY(10px) scale(0.98);
+  }
+
+  .setoran-detail-overlay.show .setoran-detail-sheet {
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* =========================================================
+   SETORAN PENARIK
+   ========================================================= */
+
+.setoran-penarik-page {
+  width: 100%;
+  max-width: var(--app-max-width, 900px);
+  margin: 0 auto;
+  padding: 20px 16px 96px;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.setoran-penarik-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.setoran-penarik-eyebrow {
+  display: block;
+  margin-bottom: 4px;
+  color: #d6a84f;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.setoran-penarik-header h1 {
+  margin: 0;
+  color: #0f2747;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.setoran-penarik-header p {
+  margin: 6px 0 0;
+  color: #718096;
+  font-size: 12px;
+}
+
+/* =========================================================
+   READY SETOR
+   ========================================================= */
+
+.setoran-ready-card {
+  overflow: hidden;
+  margin-bottom: 22px;
+  border: 1px solid #e5eaf0;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(15, 39, 71, 0.05);
+}
+
+.setoran-ready-header {
+  padding: 16px 16px 12px;
+}
+
+.setoran-ready-label {
+  display: block;
+  margin-bottom: 4px;
+  color: #d6a84f;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.setoran-ready-title {
+  margin: 0;
+  color: #0f2747;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.setoran-ready-subtitle {
+  margin: 4px 0 0;
+  color: #718096;
+  font-size: 11px;
+}
+
+/* =========================================================
+   SUMMARY PENARIK
+   ========================================================= */
+
+.setoran-penarik-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #eef1f4;
+  border-bottom: 1px solid #eef1f4;
+}
+
+.setoran-penarik-summary-item {
+  padding: 13px 14px;
+}
+
+.setoran-penarik-summary-item:nth-child(2) {
+  border-left: 1px solid #eef1f4;
+}
+
+.setoran-penarik-summary-item span {
+  display: block;
+  margin-bottom: 4px;
+  color: #718096;
+  font-size: 9px;
+}
+
+.setoran-penarik-summary-item strong {
+  display: block;
+  color: #172033;
+  font-size: 13px;
+}
+
+/* =========================================================
+   TOTAL
+   ========================================================= */
+
+.setoran-penarik-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+}
+
+.setoran-penarik-total-label {
+  color: #718096;
+  font-size: 10px;
+}
+
+.setoran-penarik-total-value {
+  color: #0f2747;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+/* =========================================================
+   VALIDATION
+   ========================================================= */
+
+.setoran-penarik-validation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 0 14px 14px;
+  padding: 9px 11px;
+  border-radius: 10px;
+  background: #e7f6ed;
+  color: #237346;
+}
+
+.setoran-penarik-validation span {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.setoran-penarik-validation strong {
+  font-size: 11px;
+}
+
+/* =========================================================
+   BUTTON BUAT SETORAN
+   ========================================================= */
+
+.setoran-create-button {
+  width: calc(100% - 28px);
+  min-height: 44px;
+  margin: 0 14px 14px;
+  border: 0;
+  border-radius: 11px;
+  background: #0f2747;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.setoran-create-button:active {
+  transform: scale(0.98);
+}
+
+.setoran-create-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* =========================================================
+   RIWAYAT
+   ========================================================= */
+
+.setoran-riwayat {
+  margin-top: 6px;
+}
+
+.setoran-riwayat-header {
+  margin-bottom: 10px;
+}
+
+.setoran-riwayat-header h2 {
+  margin: 0;
+  color: #172033;
+  font-size: 15px;
+}
+
+.setoran-riwayat-header p {
+  margin: 3px 0 0;
+  color: #718096;
+  font-size: 10px;
+}
+
+/* =========================================================
+   CARD RIWAYAT
+   ========================================================= */
+
+.setoran-penarik-card {
+  overflow: hidden;
+  margin-bottom: 10px;
+  border: 1px solid #e5eaf0;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(15, 39, 71, 0.035);
+}
+
+.setoran-penarik-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 13px 14px;
+}
+
+.setoran-penarik-card-info {
+  min-width: 0;
+}
+
+.setoran-penarik-card-info strong {
+  display: block;
+  color: #172033;
+  font-size: 11px;
+}
+
+.setoran-penarik-card-info span {
+  display: block;
+  margin-top: 3px;
+  color: #718096;
+  font-size: 9px;
+}
+
+.setoran-penarik-card-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #eef1f4;
+}
+
+.setoran-penarik-card-stat {
+  padding: 10px 12px;
+}
+
+.setoran-penarik-card-stat:nth-child(2) {
+  border-left: 1px solid #eef1f4;
+}
+
+.setoran-penarik-card-stat span {
+  display: block;
+  margin-bottom: 3px;
+  color: #718096;
+  font-size: 8px;
+}
+
+.setoran-penarik-card-stat strong {
+  display: block;
+  color: #172033;
+  font-size: 11px;
+}
+
+.setoran-penarik-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 12px;
+  border-top: 1px solid #eef1f4;
+}
+
+.setoran-penarik-card-total span {
+  display: block;
+  color: #718096;
+  font-size: 8px;
+}
+
+.setoran-penarik-card-total strong {
+  display: block;
+  margin-top: 2px;
+  color: #0f2747;
+  font-size: 13px;
+}
+
+/* =========================================================
+   DETAIL BUTTON
+   ========================================================= */
+
+.setoran-penarik-detail-button {
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid #dfe5ec;
+  border-radius: 9px;
+  background: #fff;
+  color: #0f2747;
+  font-size: 10px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/* =========================================================
+   EMPTY PENARIK
+   ========================================================= */
+
+.setoran-penarik-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  padding: 22px;
+  border: 1px solid #e5eaf0;
+  border-radius: 16px;
+  background: #fff;
+  text-align: center;
+}
+
+.setoran-penarik-empty-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background: #e7f6ed;
+  color: #237346;
+  font-size: 16px;
+}
+
+.setoran-penarik-empty strong {
+  color: #172033;
+  font-size: 12px;
+}
+
+.setoran-penarik-empty span {
+  margin-top: 5px;
+  color: #718096;
+  font-size: 10px;
+}
+
+/* =========================================================
+   STATUS PENARIK
+   ========================================================= */
+
+.setoran-penarik-status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.setoran-penarik-status.waiting {
+  background: #f8f0df;
+  color: #8a651d;
+}
+
+.setoran-penarik-status.success {
+  background: #e7f6ed;
+  color: #237346;
+}
+
+.setoran-penarik-status.danger {
+  background: #fdeaea;
+  color: #b33b3b;
+}
+
+.setoran-penarik-status.neutral {
+  background: #eef1f4;
+  color: #667085;
+}
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 768px) {
+  .setoran-penarik-page {
+    padding: 28px 24px 40px;
+  }
+
+  .setoran-ready-card {
+    max-width: 680px;
+  }
+
+  .setoran-penarik-card {
+    transition:
+      transform 0.15s ease,
+      box-shadow 0.15s ease;
+  }
+
+  .setoran-penarik-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 7px 20px rgba(15, 39, 71, 0.08);
+  }
+}

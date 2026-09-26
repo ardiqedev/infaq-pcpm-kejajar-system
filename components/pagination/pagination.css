@@ -1,0 +1,122 @@
+/**
+ * ==========================================
+ * QEDEV Framework
+ * Pagination Component
+ * ==========================================
+ */
+
+/* ==========================================
+ * Pagination
+ * ========================================== */
+
+.qedev-pagination {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+
+  margin-top: var(--space-lg);
+}
+
+/* ==========================================
+ * Info
+ * ========================================== */
+
+.qedev-pagination-info {
+  font-size: var(--font-size-sm);
+
+  color: var(--color-text-light);
+}
+
+/* ==========================================
+ * Navigation
+ * ========================================== */
+
+.qedev-pagination-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+
+  overflow-x: auto;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ==========================================
+ * Button
+ * ========================================== */
+
+.qedev-pagination-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 40px;
+  height: 40px;
+
+  padding: 0 12px;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: var(--radius-md);
+
+  background: var(--color-surface);
+
+  color: var(--color-text);
+
+  cursor: pointer;
+
+  transition: var(--transition-fast);
+
+  white-space: nowrap;
+}
+
+.qedev-pagination-button:hover:not(:disabled) {
+  background: var(--color-background);
+}
+
+.qedev-pagination-button.active {
+  background: var(--color-primary);
+
+  color: var(--color-white);
+
+  border-color: var(--color-primary);
+}
+
+.qedev-pagination-button:disabled {
+  opacity: 0.5;
+
+  cursor: not-allowed;
+}
+
+/* ==========================================
+ * Ellipsis
+ * ========================================== */
+
+.qedev-pagination-dots {
+  padding: 0 var(--space-xs);
+
+  color: var(--color-text-light);
+
+  user-select: none;
+}
+
+/* ==========================================
+ * Responsive
+ * ========================================== */
+
+@media (max-width: 768px) {
+  .qedev-pagination {
+    align-items: center;
+  }
+
+  .qedev-pagination-info {
+    text-align: center;
+  }
+
+  .qedev-pagination-nav {
+    width: 100%;
+
+    justify-content: flex-start;
+  }
+}

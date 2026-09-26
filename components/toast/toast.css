@@ -1,0 +1,249 @@
+/**
+ * ==========================================
+ * QEDEV Framework
+ * Toast Component
+ * ==========================================
+ */
+
+/**
+ * ==========================================
+ * Container
+ * ==========================================
+ */
+
+.qedev-toast {
+  position: fixed;
+
+  top: calc(var(--header-height) + 16px);
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: calc(100% - 32px);
+
+  max-width: 420px;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: var(--space-md);
+
+  padding: var(--space-lg);
+
+  background: var(--color-surface);
+
+  border-radius: var(--radius-xl);
+
+  box-shadow: var(--shadow-xl);
+
+  overflow: hidden;
+
+  z-index: var(--z-toast);
+
+  animation: slideUp var(--transition-fast);
+}
+
+/**
+ * ==========================================
+ * Icon
+ * ==========================================
+ */
+
+.qedev-toast-icon {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  font-size: 22px;
+}
+
+/**
+ * ==========================================
+ * Content
+ * ==========================================
+ */
+
+.qedev-toast-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.qedev-toast-title {
+  font-size: var(--font-size-md);
+
+  font-weight: var(--font-weight-semibold);
+
+  color: var(--color-text);
+}
+
+.qedev-toast-message {
+  margin-top: 4px;
+
+  font-size: var(--font-size-sm);
+
+  line-height: 1.5;
+
+  color: var(--color-text-secondary);
+}
+
+/**
+ * ==========================================
+ * Close Button
+ * ==========================================
+ */
+
+.qedev-toast-close {
+  width: 32px;
+  height: 32px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  transition: background var(--transition-fast);
+}
+
+.qedev-toast-close:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.qedev-toast-close i {
+  font-size: 14px;
+}
+
+/**
+ * ==========================================
+ * Progress
+ * ==========================================
+ */
+
+.qedev-toast-progress {
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  height: 4px;
+
+  width: 100%;
+
+  transform-origin: left;
+
+  animation: toastProgress 3s linear forwards;
+}
+
+.qedev-toast-success {
+  background: #f0fdf4;
+
+  border: 1px solid #bbf7d0;
+}
+
+.qedev-toast-success .qedev-toast-icon {
+  background: #dcfce7;
+
+  color: #16a34a;
+}
+
+.qedev-toast-success .qedev-toast-progress {
+  background: #16a34a;
+}
+
+.qedev-toast-error {
+  background: #fef2f2;
+
+  border: 1px solid #fecaca;
+}
+
+.qedev-toast-error .qedev-toast-icon {
+  background: #fee2e2;
+
+  color: #dc2626;
+}
+
+.qedev-toast-error .qedev-toast-progress {
+  background: #dc2626;
+}
+
+.qedev-toast-warning {
+  background: #fff7ed;
+
+  border: 1px solid #fed7aa;
+}
+
+.qedev-toast-warning .qedev-toast-icon {
+  background: #ffedd5;
+
+  color: #ea580c;
+}
+
+.qedev-toast-warning .qedev-toast-progress {
+  background: #ea580c;
+}
+
+.qedev-toast-info {
+  background: #eff6ff;
+
+  border: 1px solid #bfdbfe;
+}
+
+.qedev-toast-info .qedev-toast-icon {
+  background: #dbeafe;
+
+  color: #2563eb;
+}
+
+.qedev-toast-info .qedev-toast-progress {
+  background: #2563eb;
+}
+
+.qedev-toast-close {
+  color: inherit;
+
+  opacity: 0.6;
+}
+
+.qedev-toast-close:hover {
+  opacity: 1;
+
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.qedev-toast-icon {
+  transition:
+    background var(--transition-fast),
+    color var(--transition-fast);
+}
+
+/**
+ * ==========================================
+ * Header
+ * ==========================================
+ */
+
+.qedev-toast-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: var(--space-md);
+}

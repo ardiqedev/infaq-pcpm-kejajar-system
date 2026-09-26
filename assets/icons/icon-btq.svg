@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Left Page -->
+    <path d="
+        M14 18
+        Q21 14 30 18
+        V47
+        Q21 43 14 47
+        Z"></path>
+
+    <!-- Right Page -->
+    <path d="
+        M50 18
+        Q43 14 34 18
+        V47
+        Q43 43 50 47
+        Z"></path>
+
+    <!-- Center Fold -->
+    <path d="M32 18V47"></path>
+
+    <!-- Left Text -->
+    <path d="M19 25H27"></path>
+    <path d="M19 31H27"></path>
+    <path d="M19 37H25"></path>
+
+    <!-- Right Text -->
+    <path d="M37 25H45"></path>
+    <path d="M37 31H45"></path>
+    <path d="M39 37H45"></path>
+
+</svg>

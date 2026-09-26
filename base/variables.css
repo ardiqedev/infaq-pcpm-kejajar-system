@@ -1,0 +1,176 @@
+/* =========================================================
+   QEDEV DESIGN TOKENS
+   IURAN PENJAGA SEKOLAH
+   NAVY + GOLD
+   ========================================================= */
+
+:root {
+  /* =======================================================
+     BRAND
+     ======================================================= */
+
+  --color-primary: #0f2747;
+  --color-primary-hover: #091b33;
+  --color-primary-light: #eaf1f8;
+  --color-primary-dark: #091b33;
+
+  --color-secondary: #d6a84f;
+  --color-secondary-hover: #b98c35;
+  --color-secondary-light: #f8f0df;
+
+  /* =======================================================
+     SEMANTIC COLORS
+     ======================================================= */
+
+  --color-success: #16835b;
+  --color-success-light: #e8f5ef;
+
+  --color-warning: #d99a1e;
+  --color-warning-light: #fff5dd;
+
+  --color-danger: #c94a4a;
+  --color-danger-light: #fcecec;
+
+  --color-info: #2879a8;
+  --color-info-light: #e8f3fa;
+
+  /* =======================================================
+     BASIC COLORS
+     ======================================================= */
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-text: #172033;
+  --color-text-light: #718096;
+  --color-text-muted: #94a0b2;
+
+  --color-border: #e5eaf0;
+  --color-border-light: #eef2f6;
+
+  --color-background: #f5f7fa;
+  --color-surface: #ffffff;
+
+  /* =======================================================
+     HEADER
+     ======================================================= */
+
+  --header-background: linear-gradient(135deg, #0f2747 0%, #091b33 100%);
+
+  --header-text: #ffffff;
+
+  --header-height: 72px;
+
+  /* =======================================================
+     NAVIGATION
+     ======================================================= */
+
+  --navbar-background: #ffffff;
+  --navbar-border: #e5eaf0;
+
+  --navbar-text: #718096;
+  --navbar-text-active: #0f2747;
+
+  --navbar-active-background: #eaf1f8;
+
+  --navbar-height: 72px;
+
+  /* =======================================================
+     TYPOGRAPHY
+     ======================================================= */
+
+  --font-family:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 32px;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* =======================================================
+     LINE HEIGHT
+     ======================================================= */
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.7;
+
+  /* =======================================================
+     SPACING
+     ======================================================= */
+
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-7: 28px;
+  --spacing-8: 32px;
+  --spacing-9: 36px;
+  --spacing-10: 40px;
+
+  /* =======================================================
+     BORDER RADIUS
+     ======================================================= */
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --radius-2xl: 22px;
+
+  --radius-full: 999px;
+
+  /* =======================================================
+     SHADOW
+     ======================================================= */
+
+  --shadow-sm: 0 1px 3px rgba(15, 39, 71, 0.06);
+
+  --shadow-md: 0 4px 12px rgba(15, 39, 71, 0.08);
+
+  --shadow-lg: 0 10px 30px rgba(15, 39, 71, 0.1);
+
+  /* =======================================================
+     LAYOUT
+     ======================================================= */
+
+  --app-max-width: 430px;
+
+  --container-padding: 20px;
+
+  --content-spacing: 24px;
+
+  /* =======================================================
+     Z-INDEX
+     ======================================================= */
+
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-header: 300;
+  --z-navbar: 400;
+  --z-overlay: 500;
+  --z-modal: 600;
+  --z-toast: 700;
+
+  /* =======================================================
+     TRANSITION
+     ======================================================= */
+
+  --transition-fast: 150ms ease;
+
+  --transition-normal: 250ms ease;
+
+  --transition-slow: 350ms ease;
+}

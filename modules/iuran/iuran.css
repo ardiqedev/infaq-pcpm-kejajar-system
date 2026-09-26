@@ -1,0 +1,652 @@
+/* =========================================================
+   IURAN
+   IURAN PENJAGA SEKOLAH
+   ========================================================= */
+
+.iuran-page {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 20px 16px 110px;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.iuran-header {
+  margin-bottom: 20px;
+}
+
+.iuran-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #718096;
+  margin-bottom: 5px;
+}
+
+.iuran-title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #0f2747;
+  font-weight: 800;
+}
+
+.iuran-subtitle {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: #718096;
+}
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.iuran-section {
+  background: #ffffff;
+  border: 1px solid #e5eaf0;
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 4px 16px rgba(15, 39, 71, 0.05);
+}
+
+.iuran-section-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #172033;
+  margin-bottom: 12px;
+}
+
+/* =========================================================
+   SEARCH
+   ========================================================= */
+
+.iuran-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 46px;
+  padding: 0 14px;
+  background: #f5f7fa;
+  border: 1px solid #e5eaf0;
+  border-radius: 12px;
+}
+
+.iuran-search:focus-within {
+  border-color: #d6a84f;
+  background: #ffffff;
+}
+
+.iuran-search-icon {
+  color: #718096;
+  font-size: 14px;
+}
+
+.iuran-search-input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-size: 14px;
+  color: #172033;
+}
+
+.iuran-search-input::placeholder {
+  color: #9aa5b5;
+}
+
+.iuran-search-hint {
+  padding: 18px 4px 4px;
+  text-align: center;
+  font-size: 12px;
+  color: #8a95a5;
+}
+
+/* =========================================================
+   MEMBER LIST
+   ========================================================= */
+
+.iuran-member-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.iuran-member-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid #e5eaf0;
+  border-radius: 14px;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+.iuran-member-card:hover {
+  border-color: #d6a84f;
+  background: #fffcf5;
+}
+
+.iuran-member-card:active {
+  transform: scale(0.99);
+}
+
+.iuran-member-avatar {
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #eaf1f8;
+  color: #0f2747;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.iuran-member-avatar-large {
+  width: 50px;
+  height: 50px;
+  flex-basis: 50px;
+  font-size: 15px;
+}
+
+.iuran-member-info {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.iuran-member-info strong {
+  font-size: 14px;
+  color: #172033;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.iuran-member-info small {
+  font-size: 11px;
+  color: #718096;
+}
+
+.iuran-member-arrow {
+  color: #a0a9b7;
+  font-size: 12px;
+}
+
+/* =========================================================
+   SELECTED MEMBER
+   ========================================================= */
+
+.iuran-selected-card {
+  margin-bottom: 14px;
+  padding: 14px;
+  background: #0f2747;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(15, 39, 71, 0.16);
+}
+
+.iuran-selected-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.iuran-selected-card .iuran-member-avatar {
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+}
+
+.iuran-selected-info {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.iuran-selected-label {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.iuran-selected-info strong {
+  color: #ffffff;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.iuran-selected-info small {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 11px;
+}
+
+.iuran-change-member {
+  flex: 0 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: transparent;
+  color: #ffffff;
+  border-radius: 9px;
+  padding: 8px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* =========================================================
+   PAYMENT CARD
+   ========================================================= */
+
+.iuran-payment-card {
+  background: #ffffff;
+  border: 1px solid #e5eaf0;
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 4px 16px rgba(15, 39, 71, 0.05);
+}
+
+/* =========================================================
+   LAST PAYMENT
+   ========================================================= */
+
+.iuran-last-payment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 13px;
+  background: #f5f7fa;
+  border-radius: 13px;
+  margin-bottom: 12px;
+}
+
+.iuran-last-payment > div:first-child {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.iuran-last-payment span {
+  font-size: 10px;
+  color: #718096;
+}
+
+.iuran-last-payment strong {
+  font-size: 14px;
+  color: #172033;
+}
+
+.iuran-last-payment-icon {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #f8f0df;
+  color: #b88725;
+}
+
+/* =========================================================
+   INFO ROW
+   ========================================================= */
+
+.iuran-info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 2px 16px;
+  border-bottom: 1px solid #e5eaf0;
+  margin-bottom: 16px;
+}
+
+.iuran-info-row span {
+  font-size: 12px;
+  color: #718096;
+}
+
+.iuran-info-row strong {
+  font-size: 14px;
+  color: #0f2747;
+}
+
+/* =========================================================
+   FIELD
+   ========================================================= */
+
+.iuran-field {
+  margin-top: 16px;
+}
+
+.iuran-field label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #172033;
+}
+
+.iuran-field label span {
+  color: #9aa5b5;
+  font-weight: 400;
+}
+
+/* =========================================================
+   MONTH CONTROL
+   ========================================================= */
+
+.iuran-month-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.iuran-month-button {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  border: 1px solid #e5eaf0;
+  background: #f5f7fa;
+  color: #0f2747;
+  border-radius: 11px;
+  cursor: pointer;
+}
+
+.iuran-month-button:hover {
+  border-color: #d6a84f;
+}
+
+.iuran-month-input {
+  flex: 1;
+  min-width: 0;
+  height: 46px;
+  border: 1px solid #e5eaf0;
+  border-radius: 11px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f2747;
+  outline: 0;
+}
+
+.iuran-month-input:focus {
+  border-color: #d6a84f;
+}
+
+/* remove browser arrows */
+
+.iuran-month-input::-webkit-inner-spin-button,
+.iuran-month-input::-webkit-outer-spin-button {
+  margin: 0;
+}
+
+/* =========================================================
+   RESULT
+   ========================================================= */
+
+.iuran-result-card {
+  margin-top: 16px;
+  padding: 14px;
+  background: #eaf1f8;
+  border-radius: 14px;
+}
+
+.iuran-result-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.iuran-result-item span {
+  font-size: 11px;
+  color: #718096;
+}
+
+.iuran-result-item strong {
+  text-align: right;
+  font-size: 14px;
+  color: #0f2747;
+}
+
+.iuran-result-item strong.iuran-total {
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.iuran-result-divider {
+  height: 1px;
+  background: rgba(15, 39, 71, 0.08);
+  margin: 10px 0;
+}
+
+/* =========================================================
+   METHOD
+   ========================================================= */
+
+.iuran-method-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.iuran-method-button {
+  min-height: 62px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid #e5eaf0;
+  background: #ffffff;
+  color: #718096;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.iuran-method-button i {
+  font-size: 15px;
+}
+
+.iuran-method-button span {
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.iuran-method-button:hover {
+  border-color: #d6a84f;
+}
+
+.iuran-method-button.is-active {
+  background: #0f2747;
+  border-color: #0f2747;
+  color: #ffffff;
+}
+
+/* =========================================================
+   TEXTAREA
+   ========================================================= */
+
+.iuran-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  border: 1px solid #e5eaf0;
+  border-radius: 11px;
+  padding: 11px 12px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 13px;
+  color: #172033;
+  background: #ffffff;
+}
+
+.iuran-textarea:focus {
+  border-color: #d6a84f;
+}
+
+/* =========================================================
+   SAVE
+   ========================================================= */
+
+.iuran-save-button {
+  width: 100%;
+  min-height: 48px;
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 0;
+  border-radius: 12px;
+  background: #0f2747;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 5px 14px rgba(15, 39, 71, 0.16);
+}
+
+.iuran-save-button:hover {
+  background: #091b33;
+}
+
+.iuran-save-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================================================
+   ALERT
+   ========================================================= */
+
+.iuran-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-top: 14px;
+  padding: 11px 12px;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.iuran-alert-error {
+  background: #fef2f2;
+  color: #b42318;
+}
+
+.iuran-alert-success {
+  background: #ecfdf3;
+  color: #027a48;
+}
+
+/* =========================================================
+   EMPTY
+   ========================================================= */
+
+.iuran-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 16px 18px;
+  text-align: center;
+}
+
+.iuran-empty-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background: #f5f7fa;
+  color: #718096;
+}
+
+.iuran-empty strong {
+  color: #172033;
+  font-size: 13px;
+}
+
+.iuran-empty span {
+  margin-top: 4px;
+  color: #8a95a5;
+  font-size: 11px;
+}
+
+.iuran-retry-button {
+  margin-top: 14px;
+  border: 1px solid #d6a84f;
+  background: #ffffff;
+  color: #0f2747;
+  border-radius: 9px;
+  padding: 8px 13px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   LOADING
+   ========================================================= */
+
+.iuran-loading {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #718096;
+  font-size: 12px;
+}
+
+.iuran-spinner {
+  width: 28px;
+  height: 28px;
+  border: 3px solid #e5eaf0;
+  border-top-color: #d6a84f;
+  border-radius: 50%;
+  animation: iuranSpin 0.8s linear infinite;
+}
+
+@keyframes iuranSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (min-width: 768px) {
+  .iuran-page {
+    padding: 28px 24px 40px;
+  }
+
+  .iuran-payment-card {
+    padding: 22px;
+  }
+}

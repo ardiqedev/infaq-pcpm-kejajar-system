@@ -1,0 +1,58 @@
+/**
+ * ==========================================
+ * QEDEV Framework
+ * Confirm Component
+ * ==========================================
+ */
+
+.qedev-confirm-overlay {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  z-index: var(--z-modal);
+
+  animation: fadeIn var(--transition-fast);
+}
+
+.qedev-confirm {
+  width: 100%;
+  max-width: 420px;
+
+  background: var(--color-surface);
+
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-lg);
+
+  animation: scaleIn var(--transition-normal);
+}
+
+.qedev-confirm-header,
+.qedev-confirm-body,
+.qedev-confirm-footer {
+  padding: var(--space-md);
+}
+
+.qedev-confirm-header {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.qedev-confirm-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-sm);
+
+  border-top: 1px solid var(--color-border);
+}
+
+@media (max-width: 768px) {
+  .qedev-confirm {
+    margin: var(--space-md);
+  }
+}

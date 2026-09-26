@@ -1,0 +1,88 @@
+/**
+ * ==========================================
+ * QEDEV Framework
+ * Animation
+ * ==========================================
+ */
+
+/* ==========================================
+ * FADE
+ * ========================================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+/* ==========================================
+ * SCALE
+ * ========================================== */
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+/* ==========================================
+ * TOAST
+ * ========================================== */
+
+@keyframes toastProgress {
+  from {
+    width: 100%;
+  }
+
+  to {
+    width: 0%;
+  }
+}
+
+/* ==========================================
+ * SLIDE
+ * ========================================== */
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

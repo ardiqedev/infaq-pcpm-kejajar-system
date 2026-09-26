@@ -1,0 +1,56 @@
+/**
+ * ==========================================
+ * QEDEV Framework
+ * Card Component
+ * ==========================================
+ */
+
+.qedev-card {
+  background: var(--color-surface);
+
+  border: 1px solid var(--color-border);
+
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-sm);
+
+  overflow: hidden;
+}
+
+.qedev-card-header {
+  padding: var(--space-md);
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.qedev-card-title {
+  font-size: var(--font-size-lg);
+
+  font-weight: var(--font-weight-semibold);
+
+  color: var(--color-text);
+}
+
+.qedev-card-subtitle {
+  margin-top: var(--space-xs);
+
+  color: var(--color-text-light);
+
+  font-size: var(--font-size-sm);
+}
+
+.qedev-card-body {
+  padding: var(--space-md);
+}
+
+.qedev-card-footer {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: var(--space-sm);
+
+  padding: var(--space-md);
+
+  border-top: 1px solid var(--color-border);
+}

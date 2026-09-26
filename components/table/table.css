@@ -1,0 +1,60 @@
+/**
+ * ==========================================
+ * QEDEV Framework
+ * Table Component
+ * ==========================================
+ */
+
+.qedev-table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+.qedev-table {
+  width: 100%;
+
+  min-width: 900px;
+
+  border-collapse: collapse;
+
+  background: var(--color-surface);
+}
+
+.qedev-table th {
+  padding: 12px 16px;
+
+  background: var(--color-background);
+
+  border-bottom: 1px solid var(--color-border);
+
+  font-weight: var(--font-weight-semibold);
+
+  white-space: nowrap;
+}
+
+.qedev-table td {
+  padding: 12px 16px;
+
+  border-bottom: 1px solid var(--color-border);
+
+  vertical-align: middle;
+}
+
+.qedev-table tbody tr:hover {
+  background: var(--color-background);
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}

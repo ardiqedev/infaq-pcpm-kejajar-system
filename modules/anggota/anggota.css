@@ -1,0 +1,890 @@
+/**
+ * =========================================================
+ * ANGGOTA CSS
+ * IURAN PENJAGA SEKOLAH
+ * =========================================================
+ *
+ * Mobile First
+ * Table Based
+ * Navy + Gold
+ * =========================================================
+ */
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.anggota-page {
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.anggota-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.anggota-header-info {
+  min-width: 0;
+}
+
+.anggota-title {
+  margin: 0;
+  color: #0f2747;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.anggota-subtitle {
+  margin-top: 5px;
+  color: #718096;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.anggota-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  min-height: 40px;
+  padding: 0 14px;
+
+  border: 1px solid transparent;
+  border-radius: 9px;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.15s ease;
+}
+
+.anggota-btn:active {
+  transform: translateY(1px);
+}
+
+.anggota-btn-primary {
+  color: #ffffff;
+  background: #0f2747;
+  border-color: #0f2747;
+}
+
+.anggota-btn-primary:hover {
+  background: #091b33;
+  border-color: #091b33;
+}
+
+.anggota-btn-secondary {
+  color: #0f2747;
+  background: #ffffff;
+  border-color: #d8e0ea;
+}
+
+.anggota-btn-secondary:hover {
+  background: #f5f7fa;
+}
+
+.anggota-btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 18px;
+  height: 18px;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* =========================================================
+   TOOLBAR
+========================================================= */
+
+.anggota-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  margin-bottom: 14px;
+}
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.anggota-search {
+  position: relative;
+  width: 100%;
+}
+
+.anggota-search-icon {
+  position: absolute;
+  top: 50%;
+  left: 13px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 18px;
+  height: 18px;
+
+  color: #718096;
+  font-size: 14px;
+
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.anggota-search-input {
+  width: 100%;
+  height: 42px;
+
+  box-sizing: border-box;
+
+  padding: 0 13px 0 38px;
+
+  border: 1px solid #dce3ec;
+  border-radius: 9px;
+
+  outline: none;
+
+  background: #ffffff;
+  color: #172033;
+
+  font-family: inherit;
+  font-size: 14px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.anggota-search-input::placeholder {
+  color: #9aa6b5;
+}
+
+.anggota-search-input:focus {
+  border-color: #0f2747;
+  box-shadow: 0 0 0 3px rgba(15, 39, 71, 0.08);
+}
+
+/* =========================================================
+   FILTER
+========================================================= */
+
+.anggota-filter {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.anggota-filter-label {
+  flex: 0 0 auto;
+
+  color: #718096;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.anggota-filter-select {
+  min-width: 130px;
+  height: 42px;
+
+  padding: 0 34px 0 12px;
+
+  border: 1px solid #dce3ec;
+  border-radius: 9px;
+
+  outline: none;
+
+  background: #ffffff;
+  color: #172033;
+
+  font-family: inherit;
+  font-size: 13px;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.anggota-filter-select:focus {
+  border-color: #0f2747;
+  box-shadow: 0 0 0 3px rgba(15, 39, 71, 0.08);
+}
+
+/* =========================================================
+   SUMMARY
+========================================================= */
+
+.anggota-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-height: 52px;
+
+  margin-bottom: 12px;
+  padding: 0 15px;
+
+  border: 1px solid #e5eaf0;
+  border-radius: 10px;
+
+  background: #ffffff;
+}
+
+.anggota-summary-label {
+  color: #718096;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.anggota-summary-value {
+  color: #0f2747;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   TABLE CARD
+========================================================= */
+
+.anggota-table-card {
+  width: 100%;
+
+  overflow: hidden;
+
+  border: 1px solid #e5eaf0;
+  border-radius: 11px;
+
+  background: #ffffff;
+}
+
+/* =========================================================
+   TABLE WRAPPER
+========================================================= */
+
+.anggota-table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.anggota-table {
+  width: 100%;
+  min-width: 760px;
+
+  border-collapse: collapse;
+
+  color: #172033;
+
+  font-size: 13px;
+}
+
+/* =========================================================
+   TABLE HEAD
+========================================================= */
+
+.anggota-table thead {
+  background: #f5f7fa;
+}
+
+.anggota-table th {
+  height: 46px;
+
+  padding: 0 14px;
+
+  border-bottom: 1px solid #e5eaf0;
+
+  color: #5e6b7c;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   TABLE BODY
+========================================================= */
+
+.anggota-table td {
+  height: 54px;
+
+  padding: 8px 14px;
+
+  border-bottom: 1px solid #edf0f4;
+
+  vertical-align: middle;
+}
+
+.anggota-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.anggota-table tbody tr {
+  transition: background-color 0.15s ease;
+}
+
+.anggota-table tbody tr:hover {
+  background: #fafbfd;
+}
+
+/* =========================================================
+   COLUMN
+========================================================= */
+
+.anggota-table .col-no {
+  width: 52px;
+
+  text-align: center;
+}
+
+.anggota-table .col-nama {
+  min-width: 180px;
+}
+
+.anggota-table .col-iuran {
+  width: 130px;
+}
+
+.anggota-table .col-pembayaran {
+  min-width: 190px;
+}
+
+.anggota-table .col-status {
+  width: 105px;
+}
+
+.anggota-table .col-aksi {
+  width: 230px;
+}
+
+/* =========================================================
+   NAMA
+========================================================= */
+
+.anggota-name {
+  color: #172033;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   MONEY
+========================================================= */
+
+.anggota-money {
+  color: #0f2747;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   PERIOD
+========================================================= */
+
+.anggota-period {
+  color: #4a5568;
+
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.anggota-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 66px;
+  min-height: 25px;
+
+  padding: 0 9px;
+
+  border-radius: 999px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  line-height: 1;
+
+  white-space: nowrap;
+}
+
+.status-aktif {
+  color: #237a4b;
+  background: #e8f6ee;
+}
+
+.status-nonaktif {
+  color: #a33a3a;
+  background: #fbeaea;
+}
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.anggota-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+
+.anggota-action-btn {
+  min-height: 30px;
+
+  padding: 0 9px;
+
+  border: 1px solid #dce3ec;
+  border-radius: 7px;
+
+  background: #ffffff;
+  color: #0f2747;
+
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.anggota-action-btn:hover {
+  background: #f5f7fa;
+  border-color: #c8d2df;
+}
+
+.anggota-action-danger {
+  color: #a33a3a;
+}
+
+.anggota-action-danger:hover {
+  background: #fbeaea;
+  border-color: #e9bdbd;
+}
+
+.anggota-action-success {
+  color: #237a4b;
+}
+
+.anggota-action-success:hover {
+  background: #e8f6ee;
+  border-color: #b9dfc8;
+}
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.anggota-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 240px;
+
+  padding: 30px 20px;
+
+  text-align: center;
+}
+
+.anggota-empty-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 52px;
+  height: 52px;
+
+  margin-bottom: 12px;
+
+  border-radius: 50%;
+
+  background: #eaf1f8;
+
+  font-size: 22px;
+}
+
+.anggota-empty-title {
+  color: #172033;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.anggota-empty-text {
+  max-width: 320px;
+
+  margin-top: 5px;
+
+  color: #718096;
+
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.anggota-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 260px;
+
+  padding: 30px;
+}
+
+.anggota-loading-spinner {
+  width: 28px;
+  height: 28px;
+
+  margin-bottom: 12px;
+
+  border: 3px solid #e5eaf0;
+  border-top-color: #0f2747;
+  border-radius: 50%;
+
+  animation: anggotaSpin 0.8s linear infinite;
+}
+
+.anggota-loading-text {
+  color: #718096;
+
+  font-size: 13px;
+}
+
+@keyframes anggotaSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.anggota-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 300px;
+
+  padding: 30px 20px;
+
+  text-align: center;
+}
+
+.anggota-error-icon {
+  margin-bottom: 10px;
+
+  font-size: 30px;
+}
+
+.anggota-error-title {
+  color: #172033;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.anggota-error-message {
+  max-width: 360px;
+
+  margin: 6px 0 16px;
+
+  color: #718096;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   DETAIL
+========================================================= */
+
+.anggota-detail {
+  width: 100%;
+}
+
+.anggota-detail-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 20px;
+}
+
+.anggota-detail-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 auto;
+
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+
+  background: #eaf1f8;
+  color: #0f2747;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.anggota-detail-heading {
+  min-width: 0;
+}
+
+.anggota-detail-name {
+  margin-bottom: 6px;
+
+  color: #172033;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  word-break: break-word;
+}
+
+.anggota-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 10px;
+}
+
+.anggota-detail-item {
+  padding: 13px;
+
+  border: 1px solid #e5eaf0;
+  border-radius: 9px;
+
+  background: #fafbfd;
+}
+
+.anggota-detail-label {
+  margin-bottom: 5px;
+
+  color: #718096;
+
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.anggota-detail-value {
+  color: #172033;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  word-break: break-word;
+}
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.anggota-form {
+  width: 100%;
+}
+
+.anggota-form-title {
+  margin-bottom: 20px;
+
+  color: #0f2747;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.anggota-form-group {
+  margin-bottom: 15px;
+}
+
+.anggota-form-label {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #39465a;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.anggota-form-label .required {
+  color: #c84a4a;
+}
+
+.anggota-form-input {
+  width: 100%;
+  height: 42px;
+
+  box-sizing: border-box;
+
+  padding: 0 12px;
+
+  border: 1px solid #dce3ec;
+  border-radius: 8px;
+
+  outline: none;
+
+  background: #ffffff;
+  color: #172033;
+
+  font-family: inherit;
+  font-size: 13px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.anggota-form-input:focus {
+  border-color: #0f2747;
+  box-shadow: 0 0 0 3px rgba(15, 39, 71, 0.08);
+}
+
+.anggota-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+
+  margin-top: 20px;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (min-width: 640px) {
+  .anggota-page {
+    padding: 20px;
+  }
+
+  .anggota-toolbar {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .anggota-search {
+    flex: 1;
+  }
+
+  .anggota-filter {
+    flex: 0 0 auto;
+  }
+
+  .anggota-detail-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================================================
+   DESKTOP
+========================================================= */
+
+@media (min-width: 1024px) {
+  .anggota-page {
+    padding: 24px;
+  }
+
+  .anggota-header {
+    align-items: center;
+  }
+
+  .anggota-title {
+    font-size: 24px;
+  }
+
+  .anggota-subtitle {
+    font-size: 13px;
+  }
+
+  .anggota-summary {
+    justify-content: flex-start;
+    gap: 16px;
+
+    width: fit-content;
+
+    padding: 0 18px;
+  }
+
+  .anggota-table {
+    min-width: 0;
+  }
+}
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1280px) {
+  .anggota-page {
+    padding: 26px 30px;
+  }
+}

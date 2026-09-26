@@ -1,0 +1,100 @@
+/**
+ * ==========================================
+ * QEDEV Framework
+ * Form Component
+ * ==========================================
+ */
+
+.qedev-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-md);
+}
+
+.qedev-label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+}
+
+.qedev-input,
+.qedev-textarea,
+.qedev-select {
+  width: 100%;
+
+  padding: 10px 12px;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: var(--radius-md);
+
+  background: var(--color-surface);
+
+  color: var(--color-text);
+
+  font-size: var(--font-size-md);
+
+  transition: var(--transition-fast);
+}
+
+.qedev-input:focus,
+.qedev-textarea:focus,
+.qedev-select:focus {
+  outline: none;
+
+  border-color: var(--color-primary);
+}
+
+.qedev-input-wrapper {
+  position: relative;
+}
+
+.qedev-input-wrapper .qedev-input {
+  padding-right: 46px;
+}
+
+.qedev-input-wrapper .qedev-input {
+  padding-right: 46px;
+}
+
+.qedev-input-toggle {
+  position: absolute;
+
+  top: 50%;
+  right: 12px;
+
+  transform: translateY(-50%);
+
+  width: 32px;
+  height: 32px;
+
+  border: none;
+
+  background: transparent;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+
+  color: var(--color-text-light);
+
+  transition: var(--transition-fast);
+}
+
+.qedev-input-toggle:hover {
+  color: var(--color-primary);
+}
+
+.qedev-checkbox,
+.qedev-radio {
+  display: flex;
+
+  align-items: center;
+
+  gap: var(--space-sm);
+}

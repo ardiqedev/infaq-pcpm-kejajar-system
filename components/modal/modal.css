@@ -1,0 +1,166 @@
+/**
+ * ==========================================
+ * QEDEV Framework
+ * Modal Component
+ * ==========================================
+ */
+
+/* ==========================================
+ * Overlay
+ * ========================================== */
+
+.qedev-modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: var(--space-lg);
+
+  background: rgba(0, 0, 0, 0.45);
+
+  z-index: var(--z-modal);
+
+  animation: fadeIn var(--transition-fast);
+}
+
+/* ==========================================
+ * Container
+ * ========================================== */
+
+.qedev-modal {
+  width: 100%;
+  max-height: 90vh;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  background: var(--color-surface);
+
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-lg);
+
+  animation: scaleIn var(--transition-normal);
+}
+
+/* ==========================================
+ * Sizes
+ * ========================================== */
+
+.qedev-modal-sm {
+  max-width: 400px;
+}
+
+.qedev-modal-md {
+  max-width: 600px;
+}
+
+.qedev-modal-lg {
+  max-width: 800px;
+}
+
+.qedev-modal-xl {
+  max-width: 1000px;
+}
+
+.qedev-modal-full {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  border-radius: 0;
+}
+
+/* ==========================================
+ * Header
+ * ========================================== */
+
+.qedev-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: var(--space-md);
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* ==========================================
+ * Title
+ * ========================================== */
+
+.qedev-modal-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+
+  color: var(--color-text);
+}
+
+/* ==========================================
+ * Close Button
+ * ========================================== */
+
+.qedev-modal-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 36px;
+  height: 36px;
+
+  border-radius: var(--radius-full);
+
+  color: var(--color-text-light);
+
+  transition: var(--transition-fast);
+}
+
+.qedev-modal-close:hover {
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+/* ==========================================
+ * Body
+ * ========================================== */
+
+.qedev-modal-body {
+  flex: 1;
+
+  padding: var(--space-md);
+
+  overflow-y: auto;
+}
+
+/* ==========================================
+ * Footer
+ * ========================================== */
+
+.qedev-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-sm);
+
+  padding: var(--space-md);
+
+  border-top: 1px solid var(--color-border);
+}
+
+/* ==========================================
+ * Responsive
+ * ========================================== */
+
+@media (max-width: 768px) {
+  .qedev-modal-overlay {
+    padding: var(--space-md);
+  }
+
+  .qedev-modal {
+    max-height: 95vh;
+  }
+}

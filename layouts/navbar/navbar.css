@@ -1,0 +1,291 @@
+/* =========================================================
+   QEDEV NAVBAR
+   IURAN PENJAGA SEKOLAH
+   ========================================================= */
+
+/* =========================================================
+   NAVBAR CONTAINER
+   ========================================================= */
+
+.qedev-navbar-container {
+  position: fixed;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: var(--z-navbar);
+
+  width: 100%;
+
+  height: var(--navbar-height);
+
+  box-sizing: border-box;
+
+  background: var(--navbar-background);
+
+  border-top: 1px solid var(--navbar-border);
+
+  box-shadow: 0 -4px 16px rgba(15, 39, 71, 0.06);
+}
+
+/* =========================================================
+   INNER
+   ========================================================= */
+
+.qedev-navbar-inner {
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  align-items: stretch;
+
+  width: 100%;
+
+  max-width: var(--app-max-width);
+
+  height: 100%;
+
+  margin: 0 auto;
+
+  padding: 6px 8px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   NAV ITEM
+   ========================================================= */
+
+.qedev-navbar-item {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 4px;
+
+  min-width: 0;
+
+  padding: 6px 4px;
+
+  border: 0;
+
+  border-radius: var(--radius-md);
+
+  background: transparent;
+
+  color: var(--navbar-text);
+
+  font-family: var(--font-family);
+
+  cursor: pointer;
+
+  transition:
+    color var(--transition-fast),
+    background var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.qedev-navbar-item:hover {
+  color: var(--navbar-text-active);
+
+  background: var(--navbar-active-background);
+}
+
+.qedev-navbar-item:active {
+  transform: scale(0.96);
+}
+
+/* =========================================================
+   ACTIVE
+   ========================================================= */
+
+.qedev-navbar-item.is-active {
+  color: var(--navbar-text-active);
+
+  background: var(--navbar-active-background);
+}
+
+/* =========================================================
+   ACTIVE INDICATOR
+   ========================================================= */
+
+.qedev-navbar-item.is-active::before {
+  content: "";
+
+  position: absolute;
+
+  top: 3px;
+
+  left: 50%;
+
+  width: 22px;
+
+  height: 3px;
+
+  border-radius: var(--radius-full);
+
+  background: var(--color-secondary);
+
+  transform: translateX(-50%);
+}
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.qedev-navbar-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 24px;
+
+  height: 24px;
+}
+
+.qedev-navbar-icon i {
+  font-size: 17px;
+
+  line-height: 1;
+}
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.qedev-navbar-label {
+  max-width: 100%;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+
+  font-size: 10px;
+
+  font-weight: var(--font-weight-medium);
+
+  line-height: 1.2;
+}
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
+.qedev-navbar-item:focus-visible {
+  outline: 2px solid var(--color-secondary);
+
+  outline-offset: -2px;
+}
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 768px) {
+  .qedev-navbar-container {
+    position: fixed;
+
+    left: 24px;
+    right: auto;
+    bottom: 24px;
+
+    width: 220px;
+
+    height: auto;
+
+    border: 1px solid var(--navbar-border);
+
+    border-radius: var(--radius-xl);
+
+    box-shadow: var(--shadow-lg);
+  }
+
+  .qedev-navbar-inner {
+    display: flex;
+
+    flex-direction: column;
+
+    max-width: none;
+
+    height: auto;
+
+    padding: 10px;
+
+    gap: 4px;
+  }
+
+  .qedev-navbar-item {
+    flex-direction: row;
+
+    justify-content: flex-start;
+
+    gap: 12px;
+
+    width: 100%;
+
+    min-height: 48px;
+
+    padding: 10px 12px;
+  }
+
+  .qedev-navbar-item.is-active::before {
+    top: 50%;
+    left: 3px;
+
+    width: 3px;
+    height: 22px;
+
+    transform: translateY(-50%);
+  }
+
+  .qedev-navbar-icon {
+    width: 24px;
+
+    height: 24px;
+  }
+
+  .qedev-navbar-label {
+    font-size: var(--font-size-sm);
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 360px) {
+  .qedev-navbar-inner {
+    padding: 5px 4px;
+  }
+
+  .qedev-navbar-item {
+    gap: 3px;
+
+    padding: 5px 2px;
+  }
+
+  .qedev-navbar-icon {
+    width: 22px;
+
+    height: 22px;
+  }
+
+  .qedev-navbar-icon i {
+    font-size: 15px;
+  }
+
+  .qedev-navbar-label {
+    font-size: 9px;
+  }
+}
